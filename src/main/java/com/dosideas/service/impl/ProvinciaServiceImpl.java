@@ -20,7 +20,7 @@ public class ProvinciaServiceImpl implements ProvinciaService {
 
     @Override
     public Provincia buscarPorId(long id) {
-        return repository.findById(id);
+        return repository.findById(id).orElse(null);
     }
 
 }

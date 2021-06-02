@@ -1,13 +1,9 @@
 package com.dosideas.repository.impl;
 
 import com.dosideas.domain.Provincia;
-import com.dosideas.repository.ProvinciaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public class ProvinciaRepositoryImpl implements ProvinciaRepository {
+public class ProvinciaRepositoryImpl {
 
-    @Override
     public Provincia findById(long id) {
         if (id < 0) {
             return null;
