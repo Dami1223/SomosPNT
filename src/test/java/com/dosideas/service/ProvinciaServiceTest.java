@@ -34,15 +34,4 @@ public class ProvinciaServiceTest {
         assertThat(provincia).isNull();
     }
 
-    @Test
-    public void buscarPorId_conIdExistente_retornaProvincia() {
-        long id = 2;
-        Provincia provinciaEsperada = new Provincia();
-        provinciaEsperada.setId(id);
-        provinciaEsperada.setNombre("Capital Federal");
-        Provincia provinciaObtenida = provinciaService.buscarPorId(id);
-
-        assertThat(provinciaObtenida).isEqualToComparingFieldByField(provinciaEsperada);
-    }
-
 }

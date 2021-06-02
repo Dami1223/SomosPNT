@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 public class ProvinciaServiceImpl implements ProvinciaService {
-    
+
     @Autowired
     private final ProvinciaRepository repository;
 
