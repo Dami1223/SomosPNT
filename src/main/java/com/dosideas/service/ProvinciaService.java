@@ -9,4 +9,6 @@ public interface ProvinciaService {
 
     List<Provincia> buscarPorNombreExacto(String nombre) throws Exception;
 
+    List<Provincia> buscarPorNombreGeneral(String nombre) throws Exception;
+
 }

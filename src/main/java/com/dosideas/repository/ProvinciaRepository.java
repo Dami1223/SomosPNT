@@ -8,4 +8,6 @@ public interface ProvinciaRepository extends JpaRepository<Provincia, Long> {
 
     List<Provincia> findByNombre(String nombre);
 
+    List<Provincia> findByNombreContaining(String nombre);
+
 }

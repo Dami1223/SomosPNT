@@ -26,4 +26,9 @@ public class Provincia {
         this.nombre = nombre;
     }
 
+    @Override
+    public String toString() {
+        return "Provincia{" + "id=" + id + ", nombre=" + nombre + '}';
+    }
+
 }

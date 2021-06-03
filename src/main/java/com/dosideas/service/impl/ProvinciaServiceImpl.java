@@ -36,4 +36,17 @@ public class ProvinciaServiceImpl implements ProvinciaService {
         return repository.findByNombre(nombre);
     }
 
+    @Override
+    public List<Provincia> buscarPorNombreGeneral(String nombre) throws Exception {
+        List<Provincia> provincias;
+        if (nombre == null) {
+            throw new NombreInvalidoException("El parametro es null");
+        }
+        provincias = repository.findByNombreContaining(nombre);
+        if (provincias.isEmpty()) {
+            return null;
+        }
+        return provincias;
+    }
+
 }
